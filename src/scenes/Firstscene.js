@@ -8,7 +8,7 @@ class Firstscene extends Phaser.Scene {
 
     constructor() {
         super('Firstscene');
-    }
+    }ss
 
     init() {
         console.log("FirstScene");
@@ -155,6 +155,10 @@ class Firstscene extends Phaser.Scene {
             this.player.setVelocityX(0)
                 .anims.play('turn');
         }
+        if (this.score == 50) {
+            location.replace("https://www.w3schools.com")
+        }
+        console.log(this.score);
     }
 
 
